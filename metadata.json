@@ -1,0 +1,6 @@
+{
+  "name": "Vizioni Digjital",
+  "description": "Autonomous AI Agents for Balkan Enterprises. The region's first Agentic AI Studio based in Prishtina & Tirana.",
+  "requestFramePermissions": ["microphone"],
+  "majorCapabilities": []
+}

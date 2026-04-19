@@ -1,0 +1,62 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+
+  --color-neon-mint: #00FFAA;
+  --color-neon-orchid: #D400FF;
+  --color-void: #050505;
+  --color-glass-border: rgba(255, 255, 255, 0.12);
+  --color-glass-bg: rgba(255, 255, 255, 0.03);
+}
+
+:root {
+  --accent: var(--color-neon-mint);
+}
+
+body {
+  background-color: var(--color-void);
+  background-image: 
+    linear-gradient(rgba(255,255,255,0.02) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,0.02) 1px, transparent 1px);
+  background-size: 40px 40px;
+  color: #FFFFFF;
+  font-family: var(--font-sans);
+  overflow-x: hidden;
+  cursor: none; /* Hide default cursor */
+}
+
+h1 {
+  background: linear-gradient(90deg, var(--color-neon-mint), var(--color-neon-orchid));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Custom cursor specifically for interaction areas */
+.custom-cursor-area {
+  cursor: none;
+}
+
+::selection {
+  background: var(--accent);
+  color: var(--color-void);
+}
+
+/* Hide scrollbar for extreme immersion but allow scrolling */
+::-webkit-scrollbar {
+  width: 4px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-void);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 2px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--accent);
+}
