@@ -19,7 +19,7 @@ export const DemoNotification = () => {
               <AlertCircle className="w-3 h-3 text-neon-orchid shrink-0 animate-pulse" />
               <div className="font-mono truncate text-white/80 uppercase">
                 <span className="text-neon-orchid font-bold mr-2 hidden sm:inline">SYSTEM_NOTICE:</span>
-                Demo mode. For full functional AI systems, visit{' '}
+                Demo mode. For full functional website system, visit{' '}
                 <a 
                   href="https://vizionidigjital.com" 
                   target="_blank" 
