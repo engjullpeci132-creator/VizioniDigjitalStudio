@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://vizionidigjital.com/sitemap.xml
